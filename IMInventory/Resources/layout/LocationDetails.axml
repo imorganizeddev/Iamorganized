@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/deleteicon2x"
+            android:id="@+id/imgCloseLocationCountPopUp"
+            android:padding="20dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+            <TextView
+                android:id="@+id/txtManualEntryCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:text="Manual Entry"
+                android:textColor="#7c929f" />
+            <TextView
+                android:id="@+id/txtManualEntryCount"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:text="Add"
+                android:textColor="#7c929f" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+            <TextView
+                android:id="@+id/txtVoiceLengthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:text="Voice Dictation"
+                android:textColor="#7c929f" />
+            <TextView
+                android:id="@+id/txtVoiceLength"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:text="Add"
+                android:textColor="#7c929f" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+            <TextView
+                android:id="@+id/txtBarcodeEntryCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="20sp"
+                android:text="Barcode Entry"
+                android:textColor="#7c929f" />
+            <TextView
+                android:id="@+id/txtBarcodeEntryCount"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"
+                android:text="Add"
+                android:textColor="#7c929f" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

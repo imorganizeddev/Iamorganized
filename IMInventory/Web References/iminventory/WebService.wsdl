@@ -1,0 +1,2785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://tempuri.org/AbstractTypes" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="EmpLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpLoginResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgotPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ForgotPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ForgotPasswordResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpDetailsByEmpID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmpID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmpDetailsByEmpIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmpDetailsByEmpIDResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjectList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Projectname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProjectListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjectListResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartProject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Option" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartProjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StartProjectResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Alert" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vibrate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Wifi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Bluetooth" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveProfileResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopulateProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopulateProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PopulateProfileResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LocationItems">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LocationItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LocationItemsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalCreateProject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Project" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Client" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalCreateProjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExternalCreateProjectResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalSignUp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Device" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userplan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StripeSubscriptionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalSignUpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExternalSignUpResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalSignUpUserUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StripeSubscriptionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPlan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalSignUpUserUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExternalSignUpUserUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalSignUpUserSubscription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessFindITExport" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessBarCodeScan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessExport" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExternalSignUpUserSubscriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExternalSignUpUserSubscriptionResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FreeUserUploadSizeUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="empid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uploadsize" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FreeUserUploadSizeUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FreeUserUploadSizeUpdateResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="byteArrayIn1" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="Filename1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="byteArrayIn2" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="Filename2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="byteArrayIn3" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="Filename3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="byteArrayIn4" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="Filename4" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveImageResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveSingleImage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveSingleImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveSingleImageResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFileResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveManual">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="element" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveManualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveManualResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveManualforGDrive">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="element" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GDriveURL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveManualforGDriveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveManualforGDriveResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailForGDrive">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProjectID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="GDriveURL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMailForGDriveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendMailForGDriveResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignupPlan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Plan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignupPlanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SignupPlanResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CMSResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileMultiple">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileTag" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileMultipleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFileMultipleResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MargeAudio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileTag" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MargeAudioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MargeAudioResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MargeAudioForGDrive">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileTag" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MargeAudioForGDriveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MargeAudioForGDriveResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteProject">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProjectID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteProjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteProjectResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendQRCodeMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendQRCodeMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendQRCodeMailResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubscriptionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidatePaymentResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendLocationQRCodeMail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendLocationQRCodeMailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendLocationQRCodeMailResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGoogleAuthCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AccountID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGoogleAuthCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGoogleAuthCodeResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveGoogleAuthCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="AccountID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveGoogleAuthCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveGoogleAuthCodeResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="base64Binary" nillable="true" type="s:base64Binary" />
+    </s:schema>
+    <s:schema targetNamespace="http://tempuri.org/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EmpLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpLogin" />
+  </wsdl:message>
+  <wsdl:message name="EmpLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ForgotPassword" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ForgotPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpDetailsByEmpIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmpDetailsByEmpID" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpDetailsByEmpIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmpDetailsByEmpIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProjectListSoapIn">
+    <wsdl:part name="parameters" element="tns:ProjectList" />
+  </wsdl:message>
+  <wsdl:message name="ProjectListSoapOut">
+    <wsdl:part name="parameters" element="tns:ProjectListResponse" />
+  </wsdl:message>
+  <wsdl:message name="StartProjectSoapIn">
+    <wsdl:part name="parameters" element="tns:StartProject" />
+  </wsdl:message>
+  <wsdl:message name="StartProjectSoapOut">
+    <wsdl:part name="parameters" element="tns:StartProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveProfile" />
+  </wsdl:message>
+  <wsdl:message name="SaveProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="PopulateProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:PopulateProfile" />
+  </wsdl:message>
+  <wsdl:message name="PopulateProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:PopulateProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="LocationItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:LocationItems" />
+  </wsdl:message>
+  <wsdl:message name="LocationItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:LocationItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExternalCreateProjectSoapIn">
+    <wsdl:part name="parameters" element="tns:ExternalCreateProject" />
+  </wsdl:message>
+  <wsdl:message name="ExternalCreateProjectSoapOut">
+    <wsdl:part name="parameters" element="tns:ExternalCreateProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpSoapIn">
+    <wsdl:part name="parameters" element="tns:ExternalSignUp" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpSoapOut">
+    <wsdl:part name="parameters" element="tns:ExternalSignUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:ExternalSignUpUserUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:ExternalSignUpUserUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserSubscriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:ExternalSignUpUserSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserSubscriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:ExternalSignUpUserSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FreeUserUploadSizeUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:FreeUserUploadSizeUpdate" />
+  </wsdl:message>
+  <wsdl:message name="FreeUserUploadSizeUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:FreeUserUploadSizeUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveImageSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveImage" />
+  </wsdl:message>
+  <wsdl:message name="SaveImageSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveSingleImageSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveSingleImage" />
+  </wsdl:message>
+  <wsdl:message name="SaveSingleImageSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveSingleImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveManual" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveManualResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualforGDriveSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveManualforGDrive" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualforGDriveSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveManualforGDriveResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMailForGDriveSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMailForGDrive" />
+  </wsdl:message>
+  <wsdl:message name="SendMailForGDriveSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMailForGDriveResponse" />
+  </wsdl:message>
+  <wsdl:message name="SignupPlanSoapIn">
+    <wsdl:part name="parameters" element="tns:SignupPlan" />
+  </wsdl:message>
+  <wsdl:message name="SignupPlanSoapOut">
+    <wsdl:part name="parameters" element="tns:SignupPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="CMSSoapIn">
+    <wsdl:part name="parameters" element="tns:CMS" />
+  </wsdl:message>
+  <wsdl:message name="CMSSoapOut">
+    <wsdl:part name="parameters" element="tns:CMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileMultipleSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFileMultiple" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileMultipleSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileMultipleResponse" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioSoapIn">
+    <wsdl:part name="parameters" element="tns:MargeAudio" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioSoapOut">
+    <wsdl:part name="parameters" element="tns:MargeAudioResponse" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioForGDriveSoapIn">
+    <wsdl:part name="parameters" element="tns:MargeAudioForGDrive" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioForGDriveSoapOut">
+    <wsdl:part name="parameters" element="tns:MargeAudioForGDriveResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProjectSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteProject" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProjectSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteProjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendQRCodeMailSoapIn">
+    <wsdl:part name="parameters" element="tns:SendQRCodeMail" />
+  </wsdl:message>
+  <wsdl:message name="SendQRCodeMailSoapOut">
+    <wsdl:part name="parameters" element="tns:SendQRCodeMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidatePayment" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidatePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendLocationQRCodeMailSoapIn">
+    <wsdl:part name="parameters" element="tns:SendLocationQRCodeMail" />
+  </wsdl:message>
+  <wsdl:message name="SendLocationQRCodeMailSoapOut">
+    <wsdl:part name="parameters" element="tns:SendLocationQRCodeMailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGoogleAuthCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGoogleAuthCode" />
+  </wsdl:message>
+  <wsdl:message name="GetGoogleAuthCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGoogleAuthCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveGoogleAuthCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveGoogleAuthCode" />
+  </wsdl:message>
+  <wsdl:message name="SaveGoogleAuthCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveGoogleAuthCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpLoginHttpGetIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="deviceid" type="s:string" />
+    <wsdl:part name="deviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EmpLoginHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpGetIn">
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpDetailsByEmpIDHttpGetIn">
+    <wsdl:part name="EmpID" type="s:string" />
+    <wsdl:part name="deviceid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpDetailsByEmpIDHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ProjectListHttpGetIn">
+    <wsdl:part name="Projectname" type="s:string" />
+    <wsdl:part name="EID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProjectListHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="StartProjectHttpGetIn">
+    <wsdl:part name="pid" type="s:string" />
+    <wsdl:part name="Option" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StartProjectHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveProfileHttpGetIn">
+    <wsdl:part name="EID" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="companyname" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="Alert" type="s:string" />
+    <wsdl:part name="Vibrate" type="s:string" />
+    <wsdl:part name="Wifi" type="s:string" />
+    <wsdl:part name="Bluetooth" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveProfileHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="PopulateProfileHttpGetIn">
+    <wsdl:part name="EID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PopulateProfileHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="LocationItemsHttpGetIn">
+    <wsdl:part name="EID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LocationItemsHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalCreateProjectHttpGetIn">
+    <wsdl:part name="EID" type="s:string" />
+    <wsdl:part name="Project" type="s:string" />
+    <wsdl:part name="Client" type="s:string" />
+    <wsdl:part name="Date" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalCreateProjectHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpHttpGetIn">
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="companyname" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="UserType" type="s:string" />
+    <wsdl:part name="Device" type="s:string" />
+    <wsdl:part name="userplan" type="s:string" />
+    <wsdl:part name="StripeSubscriptionID" type="s:string" />
+    <wsdl:part name="deviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserUpdateHttpGetIn">
+    <wsdl:part name="empid" type="s:string" />
+    <wsdl:part name="StripeSubscriptionID" type="s:string" />
+    <wsdl:part name="UserPlan" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserUpdateHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserSubscriptionHttpGetIn">
+    <wsdl:part name="empid" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="AccessFindITExport" type="s:string" />
+    <wsdl:part name="AccessBarCodeScan" type="s:string" />
+    <wsdl:part name="AccessExport" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserSubscriptionHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="FreeUserUploadSizeUpdateHttpGetIn">
+    <wsdl:part name="empid" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="uploadsize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FreeUserUploadSizeUpdateHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveImageHttpGetIn">
+    <wsdl:part name="byteArrayIn1" type="s1:StringArray" />
+    <wsdl:part name="Filename1" type="s:string" />
+    <wsdl:part name="byteArrayIn2" type="s1:StringArray" />
+    <wsdl:part name="Filename2" type="s:string" />
+    <wsdl:part name="byteArrayIn3" type="s1:StringArray" />
+    <wsdl:part name="Filename3" type="s:string" />
+    <wsdl:part name="byteArrayIn4" type="s1:StringArray" />
+    <wsdl:part name="Filename4" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveImageHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveSingleImageHttpGetIn">
+    <wsdl:part name="f" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveSingleImageHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetIn">
+    <wsdl:part name="f" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualHttpGetIn">
+    <wsdl:part name="element" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualforGDriveHttpGetIn">
+    <wsdl:part name="element" type="s:string" />
+    <wsdl:part name="GDriveURL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualforGDriveHttpGetOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="SendMailForGDriveHttpGetIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="ProjectID" type="s:string" />
+    <wsdl:part name="GDriveURL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMailForGDriveHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SignupPlanHttpGetIn">
+    <wsdl:part name="Plan" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SignupPlanHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CMSHttpGetIn">
+    <wsdl:part name="Type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CMSHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileMultipleHttpGetIn">
+    <wsdl:part name="f" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+    <wsdl:part name="FileTag" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileMultipleHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioHttpGetIn">
+    <wsdl:part name="FileTag" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioForGDriveHttpGetIn">
+    <wsdl:part name="FileTag" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioForGDriveHttpGetOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProjectHttpGetIn">
+    <wsdl:part name="ProjectID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProjectHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SendQRCodeMailHttpGetIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendQRCodeMailHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentHttpGetIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SubscriptionID" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SendLocationQRCodeMailHttpGetIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLocationQRCodeMailHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetGoogleAuthCodeHttpGetIn">
+    <wsdl:part name="AccountID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGoogleAuthCodeHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveGoogleAuthCodeHttpGetIn">
+    <wsdl:part name="AuthCode" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveGoogleAuthCodeHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="EmpLoginHttpPostIn">
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="deviceid" type="s:string" />
+    <wsdl:part name="deviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EmpLoginHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpPostIn">
+    <wsdl:part name="Email" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpDetailsByEmpIDHttpPostIn">
+    <wsdl:part name="EmpID" type="s:string" />
+    <wsdl:part name="deviceid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmpDetailsByEmpIDHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ProjectListHttpPostIn">
+    <wsdl:part name="Projectname" type="s:string" />
+    <wsdl:part name="EID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProjectListHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="StartProjectHttpPostIn">
+    <wsdl:part name="pid" type="s:string" />
+    <wsdl:part name="Option" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="StartProjectHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveProfileHttpPostIn">
+    <wsdl:part name="EID" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="companyname" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="Alert" type="s:string" />
+    <wsdl:part name="Vibrate" type="s:string" />
+    <wsdl:part name="Wifi" type="s:string" />
+    <wsdl:part name="Bluetooth" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveProfileHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="PopulateProfileHttpPostIn">
+    <wsdl:part name="EID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PopulateProfileHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="LocationItemsHttpPostIn">
+    <wsdl:part name="EID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LocationItemsHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalCreateProjectHttpPostIn">
+    <wsdl:part name="EID" type="s:string" />
+    <wsdl:part name="Project" type="s:string" />
+    <wsdl:part name="Client" type="s:string" />
+    <wsdl:part name="Date" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalCreateProjectHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpHttpPostIn">
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="companyname" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="UserType" type="s:string" />
+    <wsdl:part name="Device" type="s:string" />
+    <wsdl:part name="userplan" type="s:string" />
+    <wsdl:part name="StripeSubscriptionID" type="s:string" />
+    <wsdl:part name="deviceType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserUpdateHttpPostIn">
+    <wsdl:part name="empid" type="s:string" />
+    <wsdl:part name="StripeSubscriptionID" type="s:string" />
+    <wsdl:part name="UserPlan" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserUpdateHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserSubscriptionHttpPostIn">
+    <wsdl:part name="empid" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="AccessFindITExport" type="s:string" />
+    <wsdl:part name="AccessBarCodeScan" type="s:string" />
+    <wsdl:part name="AccessExport" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExternalSignUpUserSubscriptionHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="FreeUserUploadSizeUpdateHttpPostIn">
+    <wsdl:part name="empid" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="uploadsize" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FreeUserUploadSizeUpdateHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveImageHttpPostIn">
+    <wsdl:part name="byteArrayIn1" type="s1:StringArray" />
+    <wsdl:part name="Filename1" type="s:string" />
+    <wsdl:part name="byteArrayIn2" type="s1:StringArray" />
+    <wsdl:part name="Filename2" type="s:string" />
+    <wsdl:part name="byteArrayIn3" type="s1:StringArray" />
+    <wsdl:part name="Filename3" type="s:string" />
+    <wsdl:part name="byteArrayIn4" type="s1:StringArray" />
+    <wsdl:part name="Filename4" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveImageHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveSingleImageHttpPostIn">
+    <wsdl:part name="f" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveSingleImageHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostIn">
+    <wsdl:part name="f" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualHttpPostIn">
+    <wsdl:part name="element" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualforGDriveHttpPostIn">
+    <wsdl:part name="element" type="s:string" />
+    <wsdl:part name="GDriveURL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveManualforGDriveHttpPostOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="SendMailForGDriveHttpPostIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="ProjectID" type="s:string" />
+    <wsdl:part name="GDriveURL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMailForGDriveHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SignupPlanHttpPostIn">
+    <wsdl:part name="Plan" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SignupPlanHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CMSHttpPostIn">
+    <wsdl:part name="Type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CMSHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileMultipleHttpPostIn">
+    <wsdl:part name="f" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+    <wsdl:part name="FileTag" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileMultipleHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioHttpPostIn">
+    <wsdl:part name="FileTag" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioForGDriveHttpPostIn">
+    <wsdl:part name="FileTag" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MargeAudioForGDriveHttpPostOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProjectHttpPostIn">
+    <wsdl:part name="ProjectID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteProjectHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SendQRCodeMailHttpPostIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendQRCodeMailHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentHttpPostIn">
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SubscriptionID" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SendLocationQRCodeMailHttpPostIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLocationQRCodeMailHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetGoogleAuthCodeHttpPostIn">
+    <wsdl:part name="AccountID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGoogleAuthCodeHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SaveGoogleAuthCodeHttpPostIn">
+    <wsdl:part name="AuthCode" type="s:string" />
+    <wsdl:part name="AccountID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveGoogleAuthCodeHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="EmpLogin">
+      <wsdl:input message="tns:EmpLoginSoapIn" />
+      <wsdl:output message="tns:EmpLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input message="tns:ForgotPasswordSoapIn" />
+      <wsdl:output message="tns:ForgotPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpDetailsByEmpID">
+      <wsdl:input message="tns:GetEmpDetailsByEmpIDSoapIn" />
+      <wsdl:output message="tns:GetEmpDetailsByEmpIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjectList">
+      <wsdl:input message="tns:ProjectListSoapIn" />
+      <wsdl:output message="tns:ProjectListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartProject">
+      <wsdl:input message="tns:StartProjectSoapIn" />
+      <wsdl:output message="tns:StartProjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProfile">
+      <wsdl:input message="tns:SaveProfileSoapIn" />
+      <wsdl:output message="tns:SaveProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopulateProfile">
+      <wsdl:input message="tns:PopulateProfileSoapIn" />
+      <wsdl:output message="tns:PopulateProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LocationItems">
+      <wsdl:input message="tns:LocationItemsSoapIn" />
+      <wsdl:output message="tns:LocationItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalCreateProject">
+      <wsdl:input message="tns:ExternalCreateProjectSoapIn" />
+      <wsdl:output message="tns:ExternalCreateProjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUp">
+      <wsdl:input message="tns:ExternalSignUpSoapIn" />
+      <wsdl:output message="tns:ExternalSignUpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserUpdate">
+      <wsdl:input message="tns:ExternalSignUpUserUpdateSoapIn" />
+      <wsdl:output message="tns:ExternalSignUpUserUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserSubscription">
+      <wsdl:input message="tns:ExternalSignUpUserSubscriptionSoapIn" />
+      <wsdl:output message="tns:ExternalSignUpUserSubscriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FreeUserUploadSizeUpdate">
+      <wsdl:input message="tns:FreeUserUploadSizeUpdateSoapIn" />
+      <wsdl:output message="tns:FreeUserUploadSizeUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <wsdl:input message="tns:SaveImageSoapIn" />
+      <wsdl:output message="tns:SaveImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSingleImage">
+      <wsdl:input message="tns:SaveSingleImageSoapIn" />
+      <wsdl:output message="tns:SaveSingleImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveManual">
+      <wsdl:input message="tns:SaveManualSoapIn" />
+      <wsdl:output message="tns:SaveManualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveManualforGDrive">
+      <wsdl:input message="tns:SaveManualforGDriveSoapIn" />
+      <wsdl:output message="tns:SaveManualforGDriveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForGDrive">
+      <wsdl:input message="tns:SendMailForGDriveSoapIn" />
+      <wsdl:output message="tns:SendMailForGDriveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignupPlan">
+      <wsdl:input message="tns:SignupPlanSoapIn" />
+      <wsdl:output message="tns:SignupPlanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CMS">
+      <wsdl:input message="tns:CMSSoapIn" />
+      <wsdl:output message="tns:CMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileMultiple">
+      <wsdl:input message="tns:UploadFileMultipleSoapIn" />
+      <wsdl:output message="tns:UploadFileMultipleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudio">
+      <wsdl:input message="tns:MargeAudioSoapIn" />
+      <wsdl:output message="tns:MargeAudioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudioForGDrive">
+      <wsdl:input message="tns:MargeAudioForGDriveSoapIn" />
+      <wsdl:output message="tns:MargeAudioForGDriveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <wsdl:input message="tns:DeleteProjectSoapIn" />
+      <wsdl:output message="tns:DeleteProjectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendQRCodeMail">
+      <wsdl:input message="tns:SendQRCodeMailSoapIn" />
+      <wsdl:output message="tns:SendQRCodeMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <wsdl:input message="tns:ValidatePaymentSoapIn" />
+      <wsdl:output message="tns:ValidatePaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLocationQRCodeMail">
+      <wsdl:input message="tns:SendLocationQRCodeMailSoapIn" />
+      <wsdl:output message="tns:SendLocationQRCodeMailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGoogleAuthCode">
+      <wsdl:input message="tns:GetGoogleAuthCodeSoapIn" />
+      <wsdl:output message="tns:GetGoogleAuthCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoogleAuthCode">
+      <wsdl:input message="tns:SaveGoogleAuthCodeSoapIn" />
+      <wsdl:output message="tns:SaveGoogleAuthCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServiceHttpGet">
+    <wsdl:operation name="EmpLogin">
+      <wsdl:input message="tns:EmpLoginHttpGetIn" />
+      <wsdl:output message="tns:EmpLoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input message="tns:ForgotPasswordHttpGetIn" />
+      <wsdl:output message="tns:ForgotPasswordHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpDetailsByEmpID">
+      <wsdl:input message="tns:GetEmpDetailsByEmpIDHttpGetIn" />
+      <wsdl:output message="tns:GetEmpDetailsByEmpIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjectList">
+      <wsdl:input message="tns:ProjectListHttpGetIn" />
+      <wsdl:output message="tns:ProjectListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartProject">
+      <wsdl:input message="tns:StartProjectHttpGetIn" />
+      <wsdl:output message="tns:StartProjectHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProfile">
+      <wsdl:input message="tns:SaveProfileHttpGetIn" />
+      <wsdl:output message="tns:SaveProfileHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopulateProfile">
+      <wsdl:input message="tns:PopulateProfileHttpGetIn" />
+      <wsdl:output message="tns:PopulateProfileHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LocationItems">
+      <wsdl:input message="tns:LocationItemsHttpGetIn" />
+      <wsdl:output message="tns:LocationItemsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalCreateProject">
+      <wsdl:input message="tns:ExternalCreateProjectHttpGetIn" />
+      <wsdl:output message="tns:ExternalCreateProjectHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUp">
+      <wsdl:input message="tns:ExternalSignUpHttpGetIn" />
+      <wsdl:output message="tns:ExternalSignUpHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserUpdate">
+      <wsdl:input message="tns:ExternalSignUpUserUpdateHttpGetIn" />
+      <wsdl:output message="tns:ExternalSignUpUserUpdateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserSubscription">
+      <wsdl:input message="tns:ExternalSignUpUserSubscriptionHttpGetIn" />
+      <wsdl:output message="tns:ExternalSignUpUserSubscriptionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FreeUserUploadSizeUpdate">
+      <wsdl:input message="tns:FreeUserUploadSizeUpdateHttpGetIn" />
+      <wsdl:output message="tns:FreeUserUploadSizeUpdateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <wsdl:input message="tns:SaveImageHttpGetIn" />
+      <wsdl:output message="tns:SaveImageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSingleImage">
+      <wsdl:input message="tns:SaveSingleImageHttpGetIn" />
+      <wsdl:output message="tns:SaveSingleImageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileHttpGetIn" />
+      <wsdl:output message="tns:UploadFileHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveManual">
+      <wsdl:input message="tns:SaveManualHttpGetIn" />
+      <wsdl:output message="tns:SaveManualHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveManualforGDrive">
+      <wsdl:input message="tns:SaveManualforGDriveHttpGetIn" />
+      <wsdl:output message="tns:SaveManualforGDriveHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForGDrive">
+      <wsdl:input message="tns:SendMailForGDriveHttpGetIn" />
+      <wsdl:output message="tns:SendMailForGDriveHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignupPlan">
+      <wsdl:input message="tns:SignupPlanHttpGetIn" />
+      <wsdl:output message="tns:SignupPlanHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CMS">
+      <wsdl:input message="tns:CMSHttpGetIn" />
+      <wsdl:output message="tns:CMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileMultiple">
+      <wsdl:input message="tns:UploadFileMultipleHttpGetIn" />
+      <wsdl:output message="tns:UploadFileMultipleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudio">
+      <wsdl:input message="tns:MargeAudioHttpGetIn" />
+      <wsdl:output message="tns:MargeAudioHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudioForGDrive">
+      <wsdl:input message="tns:MargeAudioForGDriveHttpGetIn" />
+      <wsdl:output message="tns:MargeAudioForGDriveHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <wsdl:input message="tns:DeleteProjectHttpGetIn" />
+      <wsdl:output message="tns:DeleteProjectHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendQRCodeMail">
+      <wsdl:input message="tns:SendQRCodeMailHttpGetIn" />
+      <wsdl:output message="tns:SendQRCodeMailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <wsdl:input message="tns:ValidatePaymentHttpGetIn" />
+      <wsdl:output message="tns:ValidatePaymentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLocationQRCodeMail">
+      <wsdl:input message="tns:SendLocationQRCodeMailHttpGetIn" />
+      <wsdl:output message="tns:SendLocationQRCodeMailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGoogleAuthCode">
+      <wsdl:input message="tns:GetGoogleAuthCodeHttpGetIn" />
+      <wsdl:output message="tns:GetGoogleAuthCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoogleAuthCode">
+      <wsdl:input message="tns:SaveGoogleAuthCodeHttpGetIn" />
+      <wsdl:output message="tns:SaveGoogleAuthCodeHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServiceHttpPost">
+    <wsdl:operation name="EmpLogin">
+      <wsdl:input message="tns:EmpLoginHttpPostIn" />
+      <wsdl:output message="tns:EmpLoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <wsdl:input message="tns:ForgotPasswordHttpPostIn" />
+      <wsdl:output message="tns:ForgotPasswordHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpDetailsByEmpID">
+      <wsdl:input message="tns:GetEmpDetailsByEmpIDHttpPostIn" />
+      <wsdl:output message="tns:GetEmpDetailsByEmpIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProjectList">
+      <wsdl:input message="tns:ProjectListHttpPostIn" />
+      <wsdl:output message="tns:ProjectListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartProject">
+      <wsdl:input message="tns:StartProjectHttpPostIn" />
+      <wsdl:output message="tns:StartProjectHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProfile">
+      <wsdl:input message="tns:SaveProfileHttpPostIn" />
+      <wsdl:output message="tns:SaveProfileHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopulateProfile">
+      <wsdl:input message="tns:PopulateProfileHttpPostIn" />
+      <wsdl:output message="tns:PopulateProfileHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LocationItems">
+      <wsdl:input message="tns:LocationItemsHttpPostIn" />
+      <wsdl:output message="tns:LocationItemsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalCreateProject">
+      <wsdl:input message="tns:ExternalCreateProjectHttpPostIn" />
+      <wsdl:output message="tns:ExternalCreateProjectHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUp">
+      <wsdl:input message="tns:ExternalSignUpHttpPostIn" />
+      <wsdl:output message="tns:ExternalSignUpHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserUpdate">
+      <wsdl:input message="tns:ExternalSignUpUserUpdateHttpPostIn" />
+      <wsdl:output message="tns:ExternalSignUpUserUpdateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserSubscription">
+      <wsdl:input message="tns:ExternalSignUpUserSubscriptionHttpPostIn" />
+      <wsdl:output message="tns:ExternalSignUpUserSubscriptionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FreeUserUploadSizeUpdate">
+      <wsdl:input message="tns:FreeUserUploadSizeUpdateHttpPostIn" />
+      <wsdl:output message="tns:FreeUserUploadSizeUpdateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <wsdl:input message="tns:SaveImageHttpPostIn" />
+      <wsdl:output message="tns:SaveImageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSingleImage">
+      <wsdl:input message="tns:SaveSingleImageHttpPostIn" />
+      <wsdl:output message="tns:SaveSingleImageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileHttpPostIn" />
+      <wsdl:output message="tns:UploadFileHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveManual">
+      <wsdl:input message="tns:SaveManualHttpPostIn" />
+      <wsdl:output message="tns:SaveManualHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveManualforGDrive">
+      <wsdl:input message="tns:SaveManualforGDriveHttpPostIn" />
+      <wsdl:output message="tns:SaveManualforGDriveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForGDrive">
+      <wsdl:input message="tns:SendMailForGDriveHttpPostIn" />
+      <wsdl:output message="tns:SendMailForGDriveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignupPlan">
+      <wsdl:input message="tns:SignupPlanHttpPostIn" />
+      <wsdl:output message="tns:SignupPlanHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CMS">
+      <wsdl:input message="tns:CMSHttpPostIn" />
+      <wsdl:output message="tns:CMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileMultiple">
+      <wsdl:input message="tns:UploadFileMultipleHttpPostIn" />
+      <wsdl:output message="tns:UploadFileMultipleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudio">
+      <wsdl:input message="tns:MargeAudioHttpPostIn" />
+      <wsdl:output message="tns:MargeAudioHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudioForGDrive">
+      <wsdl:input message="tns:MargeAudioForGDriveHttpPostIn" />
+      <wsdl:output message="tns:MargeAudioForGDriveHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <wsdl:input message="tns:DeleteProjectHttpPostIn" />
+      <wsdl:output message="tns:DeleteProjectHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendQRCodeMail">
+      <wsdl:input message="tns:SendQRCodeMailHttpPostIn" />
+      <wsdl:output message="tns:SendQRCodeMailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <wsdl:input message="tns:ValidatePaymentHttpPostIn" />
+      <wsdl:output message="tns:ValidatePaymentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLocationQRCodeMail">
+      <wsdl:input message="tns:SendLocationQRCodeMailHttpPostIn" />
+      <wsdl:output message="tns:SendLocationQRCodeMailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGoogleAuthCode">
+      <wsdl:input message="tns:GetGoogleAuthCodeHttpPostIn" />
+      <wsdl:output message="tns:GetGoogleAuthCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoogleAuthCode">
+      <wsdl:input message="tns:SaveGoogleAuthCodeHttpPostIn" />
+      <wsdl:output message="tns:SaveGoogleAuthCodeHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmpLogin">
+      <soap:operation soapAction="http://tempuri.org/EmpLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <soap:operation soapAction="http://tempuri.org/ForgotPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpDetailsByEmpID">
+      <soap:operation soapAction="http://tempuri.org/GetEmpDetailsByEmpID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjectList">
+      <soap:operation soapAction="http://tempuri.org/ProjectList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartProject">
+      <soap:operation soapAction="http://tempuri.org/StartProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProfile">
+      <soap:operation soapAction="http://tempuri.org/SaveProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateProfile">
+      <soap:operation soapAction="http://tempuri.org/PopulateProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LocationItems">
+      <soap:operation soapAction="http://tempuri.org/LocationItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalCreateProject">
+      <soap:operation soapAction="http://tempuri.org/ExternalCreateProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUp">
+      <soap:operation soapAction="http://tempuri.org/ExternalSignUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserUpdate">
+      <soap:operation soapAction="http://tempuri.org/ExternalSignUpUserUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserSubscription">
+      <soap:operation soapAction="http://tempuri.org/ExternalSignUpUserSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FreeUserUploadSizeUpdate">
+      <soap:operation soapAction="http://tempuri.org/FreeUserUploadSizeUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <soap:operation soapAction="http://tempuri.org/SaveImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSingleImage">
+      <soap:operation soapAction="http://tempuri.org/SaveSingleImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManual">
+      <soap:operation soapAction="http://tempuri.org/SaveManual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManualforGDrive">
+      <soap:operation soapAction="http://tempuri.org/SaveManualforGDrive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForGDrive">
+      <soap:operation soapAction="http://tempuri.org/SendMailForGDrive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignupPlan">
+      <soap:operation soapAction="http://tempuri.org/SignupPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CMS">
+      <soap:operation soapAction="http://tempuri.org/CMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileMultiple">
+      <soap:operation soapAction="http://tempuri.org/UploadFileMultiple" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudio">
+      <soap:operation soapAction="http://tempuri.org/MargeAudio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudioForGDrive">
+      <soap:operation soapAction="http://tempuri.org/MargeAudioForGDrive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <soap:operation soapAction="http://tempuri.org/DeleteProject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendQRCodeMail">
+      <soap:operation soapAction="http://tempuri.org/SendQRCodeMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <soap:operation soapAction="http://tempuri.org/ValidatePayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLocationQRCodeMail">
+      <soap:operation soapAction="http://tempuri.org/SendLocationQRCodeMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoogleAuthCode">
+      <soap:operation soapAction="http://tempuri.org/GetGoogleAuthCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoogleAuthCode">
+      <soap:operation soapAction="http://tempuri.org/SaveGoogleAuthCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmpLogin">
+      <soap12:operation soapAction="http://tempuri.org/EmpLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <soap12:operation soapAction="http://tempuri.org/ForgotPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpDetailsByEmpID">
+      <soap12:operation soapAction="http://tempuri.org/GetEmpDetailsByEmpID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjectList">
+      <soap12:operation soapAction="http://tempuri.org/ProjectList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartProject">
+      <soap12:operation soapAction="http://tempuri.org/StartProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProfile">
+      <soap12:operation soapAction="http://tempuri.org/SaveProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateProfile">
+      <soap12:operation soapAction="http://tempuri.org/PopulateProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LocationItems">
+      <soap12:operation soapAction="http://tempuri.org/LocationItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalCreateProject">
+      <soap12:operation soapAction="http://tempuri.org/ExternalCreateProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUp">
+      <soap12:operation soapAction="http://tempuri.org/ExternalSignUp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserUpdate">
+      <soap12:operation soapAction="http://tempuri.org/ExternalSignUpUserUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserSubscription">
+      <soap12:operation soapAction="http://tempuri.org/ExternalSignUpUserSubscription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FreeUserUploadSizeUpdate">
+      <soap12:operation soapAction="http://tempuri.org/FreeUserUploadSizeUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <soap12:operation soapAction="http://tempuri.org/SaveImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSingleImage">
+      <soap12:operation soapAction="http://tempuri.org/SaveSingleImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManual">
+      <soap12:operation soapAction="http://tempuri.org/SaveManual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManualforGDrive">
+      <soap12:operation soapAction="http://tempuri.org/SaveManualforGDrive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForGDrive">
+      <soap12:operation soapAction="http://tempuri.org/SendMailForGDrive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignupPlan">
+      <soap12:operation soapAction="http://tempuri.org/SignupPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CMS">
+      <soap12:operation soapAction="http://tempuri.org/CMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileMultiple">
+      <soap12:operation soapAction="http://tempuri.org/UploadFileMultiple" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudio">
+      <soap12:operation soapAction="http://tempuri.org/MargeAudio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudioForGDrive">
+      <soap12:operation soapAction="http://tempuri.org/MargeAudioForGDrive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <soap12:operation soapAction="http://tempuri.org/DeleteProject" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendQRCodeMail">
+      <soap12:operation soapAction="http://tempuri.org/SendQRCodeMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <soap12:operation soapAction="http://tempuri.org/ValidatePayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLocationQRCodeMail">
+      <soap12:operation soapAction="http://tempuri.org/SendLocationQRCodeMail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoogleAuthCode">
+      <soap12:operation soapAction="http://tempuri.org/GetGoogleAuthCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoogleAuthCode">
+      <soap12:operation soapAction="http://tempuri.org/SaveGoogleAuthCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceHttpGet" type="tns:WebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="EmpLogin">
+      <http:operation location="/EmpLogin" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <http:operation location="/ForgotPassword" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpDetailsByEmpID">
+      <http:operation location="/GetEmpDetailsByEmpID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjectList">
+      <http:operation location="/ProjectList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartProject">
+      <http:operation location="/StartProject" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProfile">
+      <http:operation location="/SaveProfile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateProfile">
+      <http:operation location="/PopulateProfile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LocationItems">
+      <http:operation location="/LocationItems" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalCreateProject">
+      <http:operation location="/ExternalCreateProject" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUp">
+      <http:operation location="/ExternalSignUp" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserUpdate">
+      <http:operation location="/ExternalSignUpUserUpdate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserSubscription">
+      <http:operation location="/ExternalSignUpUserSubscription" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FreeUserUploadSizeUpdate">
+      <http:operation location="/FreeUserUploadSizeUpdate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <http:operation location="/SaveImage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSingleImage">
+      <http:operation location="/SaveSingleImage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManual">
+      <http:operation location="/SaveManual" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManualforGDrive">
+      <http:operation location="/SaveManualforGDrive" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForGDrive">
+      <http:operation location="/SendMailForGDrive" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignupPlan">
+      <http:operation location="/SignupPlan" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CMS">
+      <http:operation location="/CMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileMultiple">
+      <http:operation location="/UploadFileMultiple" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudio">
+      <http:operation location="/MargeAudio" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudioForGDrive">
+      <http:operation location="/MargeAudioForGDrive" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <http:operation location="/DeleteProject" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendQRCodeMail">
+      <http:operation location="/SendQRCodeMail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <http:operation location="/ValidatePayment" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLocationQRCodeMail">
+      <http:operation location="/SendLocationQRCodeMail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoogleAuthCode">
+      <http:operation location="/GetGoogleAuthCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoogleAuthCode">
+      <http:operation location="/SaveGoogleAuthCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceHttpPost" type="tns:WebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="EmpLogin">
+      <http:operation location="/EmpLogin" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ForgotPassword">
+      <http:operation location="/ForgotPassword" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmpDetailsByEmpID">
+      <http:operation location="/GetEmpDetailsByEmpID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProjectList">
+      <http:operation location="/ProjectList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartProject">
+      <http:operation location="/StartProject" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProfile">
+      <http:operation location="/SaveProfile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateProfile">
+      <http:operation location="/PopulateProfile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LocationItems">
+      <http:operation location="/LocationItems" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalCreateProject">
+      <http:operation location="/ExternalCreateProject" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUp">
+      <http:operation location="/ExternalSignUp" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserUpdate">
+      <http:operation location="/ExternalSignUpUserUpdate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExternalSignUpUserSubscription">
+      <http:operation location="/ExternalSignUpUserSubscription" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FreeUserUploadSizeUpdate">
+      <http:operation location="/FreeUserUploadSizeUpdate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <http:operation location="/SaveImage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSingleImage">
+      <http:operation location="/SaveSingleImage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManual">
+      <http:operation location="/SaveManual" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveManualforGDrive">
+      <http:operation location="/SaveManualforGDrive" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMailForGDrive">
+      <http:operation location="/SendMailForGDrive" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignupPlan">
+      <http:operation location="/SignupPlan" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CMS">
+      <http:operation location="/CMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileMultiple">
+      <http:operation location="/UploadFileMultiple" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudio">
+      <http:operation location="/MargeAudio" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MargeAudioForGDrive">
+      <http:operation location="/MargeAudioForGDrive" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProject">
+      <http:operation location="/DeleteProject" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendQRCodeMail">
+      <http:operation location="/SendQRCodeMail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <http:operation location="/ValidatePayment" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLocationQRCodeMail">
+      <http:operation location="/SendLocationQRCodeMail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGoogleAuthCode">
+      <http:operation location="/GetGoogleAuthCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveGoogleAuthCode">
+      <http:operation location="/SaveGoogleAuthCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://imorganizedapp.com/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://imorganizedapp.com/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpGet" binding="tns:WebServiceHttpGet">
+      <http:address location="http://imorganizedapp.com/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpPost" binding="tns:WebServiceHttpPost">
+      <http:address location="http://imorganizedapp.com/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="IMInventory\IMInventory.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="IMInventory\VoiceDictation.cs" line="646" offsetX="802" offsetY="10320" expression="c" liveUpdate="False" />
+    <Watch file="IMInventory\LocationList.cs" line="1303" offsetX="662" offsetY="20832" expression="getsavemanualsuccessxml" liveUpdate="False" />
+    <Watch file="IMInventory\GoogleDriveWebview.cs" line="526" offsetX="291" offsetY="8400" expression="ex" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.IMInventory AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.AVD_for_Abdroid5_1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IMInventory\Main_Search_A.cs">
+    <Files>
+      <File FileName="IMInventory\Main.cs" Line="78" Column="4" />
+      <File FileName="IMInventory\Login.cs" Line="55" Column="21" />
+      <File FileName="IMInventory\ManualEntry.cs" Line="51" Column="34" />
+      <File FileName="IMInventory\EntryTab.cs" Line="92" Column="125" />
+      <File FileName="IMInventory\LocationList.cs" Line="467" Column="68" />
+      <File FileName="FloatingActionButton-master\FloatingActionButton\Fab.cs" Line="96" Column="1" />
+      <File FileName="FloatingActionButton-master\FloatingActionButton\FloatingActionButton.csproj" Line="1" Column="1" />
+      <File FileName="IMInventory\ProjectScreenAdapter.cs" Line="33" Column="1" />
+      <File FileName="IMInventory\Main_Search_A.cs" Line="175" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

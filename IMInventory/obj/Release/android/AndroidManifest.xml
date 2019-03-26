@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.organized.iminventory" android:versionName="3.0" android:versionCode="8" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="16" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.REORDER_TASKS" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.FLASHLIGHT" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="android.permission.READ_FRAME_BUFFER" />
+  <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.READ_INPUT_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+  <uses-permission android:name="com.android.vending.BILLING" />
+  <application android:label="Organized" android:icon="@drawable/logo_2x" android:debuggable="false" android:name="android.app.Application" android:allowBackup="true">
+    <receiver android:name="net.work.box.controller.receivers.RemoteControlReceiver">
+      <intent-filter android:priority="100000000">
+        <action android:name="android.intent.action.MEDIA_BUTTON" />
+      </intent-filter>
+    </receiver>
+    <activity android:icon="@drawable/icon" android:label="IMInventory" android:name="md56a026d58d8ebdf662f0859f9272f1917.MainActivity" />
+    <activity android:screenOrientation="sensorPortrait" android:theme="@style/Theme.Splash" android:name="md56a026d58d8ebdf662f0859f9272f1917.SplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="test" android:name="md56a026d58d8ebdf662f0859f9272f1917.test" />
+    <activity android:label="BarcodeEntry" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.BarcodeEntry" />
+    <activity android:label="VoiceDictation" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.VoiceDictation" />
+    <activity android:icon="@drawable/icon" android:label="test1" android:name="md56a026d58d8ebdf662f0859f9272f1917.test1" />
+    <activity android:label="Main_Search_A" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.Main_Search_A" />
+    <activity android:label="LocationList" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.LocationList" />
+    <activity android:label="Term" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.Term" />
+    <activity android:label="Signup" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.Signup" />
+    <activity android:label="EntryTab" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.EntryTab" />
+    <activity android:label="Login" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.Login" />
+    <activity android:label="Main" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.Main" />
+    <activity android:label="ManualEntry" android:screenOrientation="sensorPortrait" android:name="md56a026d58d8ebdf662f0859f9272f1917.ManualEntry" />
+    <activity android:label="LocationListItem" android:name="md56a026d58d8ebdf662f0859f9272f1917.LocationListItem" />
+    <activity android:label="Help" android:name="md56a026d58d8ebdf662f0859f9272f1917.Help" />
+    <activity android:label="FindItLocationListItem" android:name="md56a026d58d8ebdf662f0859f9272f1917.FindItLocationListItem" />
+    <activity android:label="PaymentActivity" android:name="md56a026d58d8ebdf662f0859f9272f1917.PaymentActivity" />
+    <activity android:label="WebView" android:name="md56a026d58d8ebdf662f0859f9272f1917.GoogleDriveWebview" />
+    <activity android:label="Web Authenticator" android:name="md5dd228c669cdb654873ac822514afcaa2.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5dd228c669cdb654873ac822514afcaa2.WebAuthenticatorActivity" />
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md53d187d1ae68db077a923b860b3b8b72a.ZxingActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.organized.iminventory.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

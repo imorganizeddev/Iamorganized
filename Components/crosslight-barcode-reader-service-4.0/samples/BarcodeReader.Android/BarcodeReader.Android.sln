@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeReader.Core", "..\BarcodeReader.Core\BarcodeReader.Core.csproj", "{F00A7585-9B33-4D64-A85F-6F14B892E442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeReader.Android", "BarcodeReader.Android.csproj", "{0A9283E7-42BC-44D3-9705-CC1F8B13AFE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A9283E7-42BC-44D3-9705-CC1F8B13AFE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9283E7-42BC-44D3-9705-CC1F8B13AFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9283E7-42BC-44D3-9705-CC1F8B13AFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9283E7-42BC-44D3-9705-CC1F8B13AFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

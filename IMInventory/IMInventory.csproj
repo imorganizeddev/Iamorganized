@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{2314DCB1-5931-44DA-A806-5D259F0A62B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IMInventory</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>IMInventory</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <DebugType>
+    </DebugType>
+    <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;x86_64</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.21.0.3.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="FormsViewGroup">
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.Android">
+      <HintPath>..\Components\xamarin.auth-1.2.3.1\lib\android\Xamarin.Auth.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android">
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.4.0.6341\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.monoandroid">
+      <HintPath>..\packages\ZXing.Net.Mobile.1.4.7.1\lib\MonoAndroid\zxing.monoandroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\packages\ZXing.Net.Mobile.1.4.7.1\lib\MonoAndroid\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Stripe">
+      <HintPath>..\Components\stripe-1.0.4\lib\android\Stripe.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.InAppBilling">
+      <HintPath>..\Components\xamarin.inappbilling-2.2\lib\android\Xamarin.InAppBilling.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\android\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="test.cs" />
+    <Compile Include="BarcodeEntry.cs" />
+    <Compile Include="VoiceDictation.cs" />
+    <Compile Include="Resources\values\NetworkConnection.cs" />
+    <Compile Include="test1.cs" />
+    <Compile Include="Main_Search_A.cs" />
+    <Compile Include="ProjectScreenAdapter.cs" />
+    <Compile Include="LocationList.cs" />
+    <Compile Include="IMApplication.cs" />
+    <Compile Include="Term.cs" />
+    <Compile Include="Signup.cs" />
+    <Compile Include="EntryTab.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="ManualEntry.cs" />
+    <Compile Include="Resources\CommonFunction.cs" />
+    <Compile Include="Resources\BaseClass.cs" />
+    <Compile Include="LocationScreenAdapter.cs" />
+    <Compile Include="Resources\Payment.cs" />
+    <Compile Include="LocationListItem.cs" />
+    <Compile Include="LocationItemListAdapter.cs" />
+    <Compile Include="Help.cs" />
+    <Compile Include="FindItLocationListItem.cs" />
+    <Compile Include="FindItLocationListItemAdapter.cs" />
+    <Compile Include="PaymentActivity.cs" />
+    <Compile Include="Resources\GeneralValues.cs" />
+    <Compile Include="Resources\InAppPurchase.cs" />
+    <Compile Include="GoogleDriveWebview.cs" />
+    <Compile Include="Web References\iminventory\Reference.cs">
+      <DependentUpon>Reference.map</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\ForgotPassword.axml" />
+    <None Include="packages.config" />
+    <None Include="Resources\values\ids.xml" />
+    <AndroidResource Include="Resources\layout\GoogleDriveWebView.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\upgrade.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\upgrade.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\upgrade.png" />
+    <None Include="Web References\iminventory\WebService.wsdl" />
+    <None Include="Web References\iminventory\WebService.disco" />
+    <None Include="Web References\iminventory\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\test.axml" />
+    <AndroidResource Include="Resources\layout\VoiceDictation.axml" />
+    <AndroidResource Include="Resources\values\color.xml" />
+    <AndroidResource Include="Resources\layout\test1.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_login_2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logo_2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_login_2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\logo_2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_login_2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo_2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_sign_up2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_sign_up2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_sign_up2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\backsignup.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\barcode_entry.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\barcode_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btnsignup2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\camera_graybox.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_camera2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_save2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\iconmain_screen2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\list2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\manual_entry2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\search2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\voice_dictation.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\backsignup.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\barcode_entry.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\barcode_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btnsignup2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\camera_graybox.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon_camera2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon_save2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\iconmain_screen2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\list2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\manual_entry2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\search2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spalsh.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\voice_dictation.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\backsignup.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\barcode_entry.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\barcode_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btnsignup2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\camera_graybox.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_camera2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_save2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\iconmain_screen2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\list2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\manual_entry2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\search2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spalsh.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\voice_dictation.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\dictation2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\dictation2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\dictation2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\customborder.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\i_m_logo_white.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\i_m_logo_white.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\i_m_logo_white.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\barcode2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\barcode2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\barcode2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\back.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\barcode.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\edit.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\voice.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\barcode.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\edit.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\voice.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\barcode.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\edit.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\voice.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\pause_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\pause_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\pause_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\delete2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\green_tick2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\delete2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\green_tick2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\delete2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\green_tick2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\next.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\pause.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\play.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\prev.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\next.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\pause.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\play.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\prev.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\next.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\pause.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\play.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\prev.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\barcode_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\barcode_icon.png" />
+    <AndroidResource Include="Resources\layout\SearchProject_Design.axml" />
+    <AndroidResource Include="Resources\layout\Main_Search_A.axml" />
+    <AndroidResource Include="Resources\layout\SearchProject.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\back_arrow2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_voice2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon_voice2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_voice2x.png" />
+    <AndroidResource Include="Resources\layout\MainInventoryList.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\deleteicon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\deleteicon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\deleteicon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\deleteicon2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\deleteicon2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\deleteicon2x.png" />
+    <AndroidResource Include="Resources\layout\SearchLocation.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\backtolist.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\backtolist.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\backtolist.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\upload.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\upload.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\upload.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\searchdelete_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\searchdelete_icon2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\searchdelete_icon2x.png" />
+    <AndroidResource Include="Resources\layout\PopUpWindow.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\EditTextStyle.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ok.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ok.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ok.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\flash.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\flash.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\flash.png" />
+    <AndroidResource Include="Resources\layout\CreateProject.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cancel.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_create.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cancel.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_create.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cancel.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_create.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Hamburger.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Hamburger.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Hamburger.png" />
+    <AndroidResource Include="Resources\layout\LocationEditPopUp.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\locationdelete2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\locationdetails2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\locationpopupcloseicon2x.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\locationrename2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\locationdelete2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\locationdetails2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\locationpopupcloseicon2x.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\locationrename2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\locationdelete2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\locationdetails2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\locationpopupcloseicon2x.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\locationrename2x.png" />
+    <AndroidResource Include="Resources\layout\CreateLocation.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\CreateProject.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\CreateProject.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\CreateProject.png" />
+    <AndroidResource Include="Resources\layout\EditLocation.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_Update.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_Update.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_Update.png" />
+    <AndroidResource Include="Resources\layout\EditLocationFromPopUp.axml" />
+    <AndroidResource Include="Resources\layout\Terms.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Check.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Check.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Check.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\AppIcon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\AppIcon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\AppIcon.png" />
+    <AndroidResource Include="Resources\layout\EntryTab.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\layout\LocationDetails.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\addimage.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\addimage.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\addimage.png" />
+    <AndroidResource Include="Resources\layout\BarcodeEntry.axml" />
+    <AndroidResource Include="Resources\layout\ManualEntry.axml" />
+    <AndroidResource Include="Resources\layout\Signup.axml" />
+    <AndroidResource Include="Resources\layout\Payment.axml" />
+    <AndroidResource Include="Resources\layout\MainLocationListItem.axml" />
+    <AndroidResource Include="Resources\layout\LocationListItem.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logout.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\uploadlocation.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\uploadlocation.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\uploadlocation.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\customprogressbar.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\helpicon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\helpicon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\helpicon.png" />
+    <AndroidResource Include="Resources\layout\Help.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\qrcodegenarator.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\qrcodegenarator.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\qrcodegenarator.png" />
+  </ItemGroup>
+  <Import Project="..\packages\Xamarin.Forms.1.4.0.6341\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.0.6341\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Helper\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FloatingActionButton-master\FloatingActionButton\FloatingActionButton.csproj">
+      <Project>{E803B210-C502-4A8E-8156-C8D626EF34B1}</Project>
+      <Name>FloatingActionButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\soumen\Downloads\RestSharp-master\RestSharp-master\RestSharp.Android\RestSharp.Android.csproj">
+      <Project>{1b662c38-984f-4b6a-89b5-aff7fcbe43a2}</Project>
+      <Name>RestSharp.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\ROBOTO-LIGHT.TTF" />
+    <AndroidAsset Include="Assets\Fonts\ROBOTO-REGULAR.TTF" />
+    <AndroidAsset Include="Assets\Fonts\BOLD-ARIAL.TTF" />
+    <AndroidAsset Include="Assets\Fonts\ARIALBOLD.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\deletelocation2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\appened2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\details2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\rename2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\deletelocation2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\appened2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\details2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\rename2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\deletelocation2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\appened2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\details2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\rename2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="stripe">
+      <Version>1.0.4</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.inappbilling">
+      <Version>2.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>21.0.3.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://imorganizedapp.com/WebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\iminventory</RelPath>
+      <UpdateFromURL>http://imorganizedapp.com/WebService.asmx</UpdateFromURL>
+    </WebReferenceUrl>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars>
+    <Jar>obj\Debug\lp\1\jl\formsviewgroup.jar</Jar>
+    <Jar>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\1\jl\formsviewgroup.jar</Jar>
+  </Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\0\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\3\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\6\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\8\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\10\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\11\jl\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\12\jl\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\lp\0\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\3\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\6\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\8\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\10\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\11\jl\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Debug\lp\12\jl\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\0.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\3.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\6.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\8.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\10.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\11.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory\obj\Debug\lp\12.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

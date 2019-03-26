@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeReader.Core", "..\BarcodeReader.Core\BarcodeReader.Core.csproj", "{F00A7585-9B33-4D64-A85F-6F14B892E442}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeReader.iOS", "BarcodeReader.iOS.csproj", "{101B70B6-463A-4D6F-BE55-3AF9E4749B37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Debug|iPhone.Build.0 = Debug|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Release|iPhone.ActiveCfg = Release|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Release|iPhone.Build.0 = Release|iPhone
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{101B70B6-463A-4D6F-BE55-3AF9E4749B37}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Release|iPhone.Build.0 = Release|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F00A7585-9B33-4D64-A85F-6F14B892E442}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="googleplayservices-drive" is-shell="true">
+  <name>Google Play Services - Drive</name>
+  <publisher>Xamarin Inc.</publisher>
+  <publisher-url>http://xamarin.com</publisher-url>
+  <version>42.1001.0.0</version>
+  <summary>Read, write, and sync files stored in Google Drive from your mobile and web apps.</summary>
+  <packages>
+    <package id="Xamarin.GooglePlayServices.Drive" version="42.1001.0" framework="android" />
+  </packages>
+  <samples>
+    <sample id="DriveSample">
+      <name>Drive Sample</name>
+      <summary>Drive Sample</summary>
+    </sample>
+  </samples>
+</component>

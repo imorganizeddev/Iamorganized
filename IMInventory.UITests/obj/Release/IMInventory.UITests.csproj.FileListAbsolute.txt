@@ -1,0 +1,111 @@
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+C:\Users\administrator\Documents\Projects\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+D:\Soumen\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+D:\Soumen\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+D:\Soumen\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+D:\Soumen\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+D:\Soumen\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+D:\Soumen\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+D:\Soumen\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+D:\Soumen\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\bin\Release\nunit.framework.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\bin\Release\nunit.framework.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.csprojResolveAssemblyReference.cache
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\bin\Release\nunit.framework.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\bin\Release\nunit.framework.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.csprojResolveAssemblyReference.cache
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory - Copy (2)\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+E:\Soumen\Xamarin\ImInventory\Development\IMInventory\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+F:\IMInventory\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+F:\IMInventory\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+F:\IMInventory\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+F:\IMInventory\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+F:\IMInventory\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+F:\IMInventory\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+F:\IMInventory\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+F:\IMInventory\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+F:\ImInventory\IMInventory\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.csprojResolveAssemblyReference.cache
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+D:\Kanchan\Projects\IM INVENTORY\Code\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\bin\Release\nunit.framework.xml
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\bin\Release\nunit.framework.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\bin\Release\nunit.framework.xml
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.csprojResolveAssemblyReference.cache
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3 - Copy\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\bin\Release\IMInventory.UITests.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\bin\Release\IMInventory.UITests.pdb
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\bin\Release\nunit.framework.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\bin\Release\Xamarin.UITest.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\bin\Release\nunit.framework.xml
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\bin\Release\Xamarin.UITest.xml
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\obj\Release\IMInventory.UITests.csprojAssemblyReference.cache
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\obj\Release\IMInventory.UITests.csproj.CoreCompileInputs.cache
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\obj\Release\IMInventory.UITests.csproj.CopyComplete
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\obj\Release\IMInventory.UITests.dll
+D:\Soumen\Xamarin\IMInventory\Development\IMInventory - version 2.3\IMInventory.UITests\obj\Release\IMInventory.UITests.pdb

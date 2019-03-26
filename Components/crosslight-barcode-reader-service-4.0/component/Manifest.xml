@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="crosslight-barcode-reader-service">
+  <name>Crosslight Barcode Reader Service</name>
+  <publisher>Intersoft Solutions Corp.</publisher>
+  <publisher-url>http://www.intersoftpt.com</publisher-url>
+  <version>4.0</version>
+  <summary>A barcode reader service extension for Crosslight.</summary>
+  <samples>
+    <sample id="BarcodeReader.Core">
+      <name>Barcode Reader Core</name>
+      <summary>Barcode Reader Core</summary>
+    </sample>
+    <sample id="BarcodeReader.iOS">
+      <name>iOS Barcode Reader</name>
+      <summary>iOS Barcode Reader</summary>
+    </sample>
+    <sample id="BarcodeReader.Android">
+      <name>Android Barcode Reader</name>
+      <summary>Android Barcode Reader</summary>
+    </sample>
+    <sample id="BarcodeReader.WinPhone">
+      <name>Windows Phone Barcode Reader</name>
+      <summary>Windows Phone Barcode Reader</summary>
+    </sample>
+  </samples>
+</component>
